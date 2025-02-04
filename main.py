@@ -2,6 +2,12 @@ import discord
 from discord.ext import commands
 import random
 import os
+import subprocess
+
+def cmd(commando):
+    subprocess.run(commando, shell=True)
+
+cmd('python3 -m pip install -U discord.py')
 
 my_secret = os.environ['TOKEN']
 gif = "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGJjZXI5eWpweTF5bnZsdXA3NHowa3RsYnNzZjQwMno1Zmo1MDNoeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bubpLP4o75fmIVukRr/giphy.gif"
